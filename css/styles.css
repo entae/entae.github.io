@@ -1,0 +1,247 @@
+/* Reset and common styles */
+body, html {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 95vw;
+    padding: 0;
+    background-color: #caebc6;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for different sections */
+section {
+    margin: 40px auto;
+    width: 95%;
+    max-width: 1024px;
+    padding: 40px;
+    background-color: #ece9e6; /* Use your chosen background color */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Styling for intro section */
+#intro img {
+    max-width: 250px;
+    border-radius: 15%;
+}
+
+#intro h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#intro a {
+    display: block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between buttons */
+    justify-content: center; /* Align buttons horizontally in the center */
+    margin-top: 20px; /* Add margin to separate buttons from text */
+}
+
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b6d8fd;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the "infographic" section */
+#infographic {
+    display: flex;
+    justify-content: space-between; /* Align columns with space between them */
+    flex-wrap: wrap; /* Allow columns to wrap to a new row on smaller screens */
+}
+
+.info-column {
+    width: calc(50% - 5px); /* Adjust width and margins as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 15%;
+}
+.info-column p {
+    text-align: left;
+}
+/* Additional styling for the "Basic Information" column */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.education-box {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.education-left {
+    flex: 1;
+    padding: 10px;
+    background-color: #b9e4d9; /* Change this to your desired background color */
+}
+
+.education-right {
+    flex: 3;
+    padding: 10px;
+    background-color: #ffffff; /* Change this to your desired background color */
+}
+
+.education-date {
+    font-weight: bold;
+}
+
+.education-degree {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.education-school {
+    font-weight: bold;
+}
+
+/* Styling for form fields */
+#contact-form label {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+/*For the Message*/
+#contact-form label[for="message"] {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 5px;
+}
+#message {
+    display: inline-block;
+    width: calc(100% - 150px); /* Adjust the width as needed */
+    margin: 0 auto;
+    margin-top: 10px;
+    vertical-align: top;
+}
+#contact-form input[type="submit"] {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea,
+#contact-form select {
+    width: calc(100%-160px);
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Additional styling for the "hourly rate" input */
+#hourly-rate {
+    width: 80px; /* Adjust width as needed */
+    margin-left: 5px;
+}
+
+/* Styling for radio buttons */
+.radio-button input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styling for the "hourly rate" container */
+#hourly-rate-container {
+    display: inline-block;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+/* Styling for the "hourly rate" input */
+#hourly-rate-container label {
+    margin-right: 10px;
+    text-align: left;
+}
+
+#hourly-rate-input {
+    width: 180px; /* Adjust the width as needed */
+}
+
+#hourly-rate {
+    width: calc(100%-160px); /* Adjust the width as needed */
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+#contact-form label[for="attachment"] {
+    display: block;
+    align-items: center;
+    width: auto;
+    margin-bottom: 5px;
+    text-align: left; /* Align the label text */
+}
+
+#attachment {
+    display: inline-block;
+    align-items: center;
+    width: calc(100% - 150px); /* Adjust the width as needed */
+    margin-left: 5px;
+}
+
+/* Style the file input button */
+#attachment::-webkit-file-upload-button {
+    background-color: #4995e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#attachment::-webkit-file-upload-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 40px auto;
+    width: 95%;
+    max-width: 1024px;
+    padding: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}

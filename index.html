@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="In Tae Chung">
+    <title>In Tae Chung's Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section id="intro" class=" section">
+        <img src="images/profile.jpg" alt="Profile Image">
+        <h1>In Tae Chung</h1>
+        <p>Aspiring Full Stack Developer</p>
+        <div class="button-container">
+            <a href="Resume.pdf" id="resume-link" class="rounded-button" download>Resume</a>
+            <a href="#" id="contact-toggle" class="rounded-button">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="infographic" class="section">
+        <div class="info-column">
+            <h2>About Me and Academic Honesty</h2>
+            <p>
+                After graduating with my Bachelor's degree in the Humanities, while I value what I have learned, I felt that I wanted to pursue a field where I could more visibly what I would work on. Learning to code has been a very frustrating but rewarding process to achieve what I envisioned. Although sometimes frustrating, I enjoy being challenged while learning to code in various languages such as C, C++, HTML, Javascript, CSS, and Java. I hope to work in an environment where I can not only be taught many things, but help add convenience to others' lives with the things I make. 
+                My other hobbies include film photography, playing the guitar, and finding delicious food.
+            </p>
+            <p>Date: <time id="current-date">2023-08-18</time></p>
+        </div>
+        <div class="info-column">
+            <h2>Basic Information</h2>
+            <div class="info-row">
+                <div class="descriptor">Name:</div>
+                <div class="value">In Tae Chung</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Age:</div>
+                <div class="value">25</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Email:</div>
+                <div class="value">itchung@myseneca.ca</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Language:</div>
+                <div class="value">English & Korean</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Class Section:</div>
+                <div class="value">NFF</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Student ID:</div>
+                <div class="value"> 128 958 220</div>
+            </div>
+            <div class="info-row">
+                <div class="descriptor">Instructor:</div>
+                <div class="value">Mark Meritt</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="education-box">
+            <div class="education-left">
+                <p class="education-date">2023-Sep 2025 (Expected)</p>
+                <p class="education-degree">Computer Programming and Analysis</p>
+            </div>
+            <div class="education-right">
+                <p class="education-degree">Ontario College Advanced Diploma</p>
+                <p class="education-school">Seneca College</p>
+                <p>
+                    Learned how to use programming languages, program design and system analysis. Web concepts were integrated into all courses to develop active database web programs on a variety of operating systems.
+                </p>
+            </div>
+        </div>
+        <div class="education-box">
+            <div class="education-left">
+                <p class="education-date">Graduated 2021</p>
+                <p class="education-degree">Honour's Law & Society</p>
+            </div>
+            <div class="education-right">
+                <p class="education-degree"> Bachelor's Degree</p>
+                <p class="education-school">York University</p>
+                <p>
+                    Learned detailed issues regarding human rights issues and minorities within North American Society. Developed skills to quickly read and understand complex concepts to form critical ideas and be more cognizant of people of diverse backgrounds and their histories.
+                </p>
+            </div>
+        </div>
+        <div class="education-box">
+            <div class="education-left">
+                <p class="education-date">Graduated 2018</p>
+            </div>
+            <div class="education-right">
+                <p class="education-degree">Ontario Secondary School Diploma (OSSD)</p>
+                <p class="education-school">Earl Haig Secondary School</p>
+                <p>
+                    Was involved in many extra-curricular activities such as the dragon-boat team, cross-country team and acted as the captain of the swim team, on top of academic studies.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact-form" class="section" style="display: none;">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://httpbin.org/post" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <br>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cityList" required>
+            <datalist id="cityList">
+                <option value="Toronto"></option>
+                <option value="Ottawa"></option>
+                <option value="Montreal"></option>
+                <option value="Vancouver"></option>
+                <option value="Winnipeg"></option>
+            </datalist>
+            <br>
+            
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal-code" required pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+            
+            <fieldset>
+                <legend>What is this regarding?</legend>
+                <div class="radio-button">
+                    <input type="radio" id="radio-button-question" name="radio-button" value="Question">
+                    <label for="radio-button-question">Question</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="radio-button-comment" name="radio-button" value="Comment">
+                    <label for="radio-button-comment">Comment</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="radio-button-hire" name="radio-button" value="Hire">
+                    <label for="radio-button-hire">Hire</label>
+                    <div id="hourly-rate-container">
+                        <input type="text" id="hourly-rate-input" name="hourly-rate" required pattern="[0-9]{1,5}" title="Must be a valid hourly rate">
+                    </div>
+                </div>
+                
+                
+            </fieldset>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required rows="5"></textarea>
+            <input type="submit" value="Send">
+
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+
+        </form>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+
+<footer>
+    <p>
+        I declare that this assignment is my own work in accordance with Seneca Academic Policy.
+        No part of this assignment has been copied manually or electronically from any other source
+        (including web sites) or distributed to other students.
+    </p>
+    <ul>
+        <li>Name: In Tae Chung</li>
+        <li>Student ID: 128 958 220</li>
+        <li>Date: Aug 18, 2023</li>
+    </ul>
+</footer>
+
+</html>
