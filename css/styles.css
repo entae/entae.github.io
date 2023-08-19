@@ -1,3 +1,23 @@
+@media (max-width: 767px) {
+    #infographic .info-column {
+        width: 100%; /* Make the columns take full width */
+        margin-right: 0; /* Remove the margin */
+    }
+}
+
+/* For desktop devices */
+@media (min-width: 768px) {
+    #infographic {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #infographic .info-column {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+    }
+}
+
 /* Reset and common styles */
 body, html {
     margin: 0 auto;
